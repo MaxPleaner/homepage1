@@ -1,4 +1,5 @@
 class Page < ActiveRecord::Base
+	validates :name, presence: true, allow_blank: false
 
 class StaticPage
 	def self.find_by_name(name)
