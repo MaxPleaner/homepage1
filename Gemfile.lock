@@ -40,6 +40,8 @@ GEM
     execjs (2.5.2)
     hike (1.2.3)
     i18n (0.7.0)
+    informant-rails (0.8.0)
+      rails (>= 3.0.0, < 4.3.0)
     jbuilder (2.2.13)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -115,6 +117,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  informant-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
