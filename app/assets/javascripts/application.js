@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ansi_up
 //= require_tree .
+
+function ready() {
+	body = $('body')[0]
+	body.outerHTML = ansi_up.ansi_to_html(body.outerHTML);
+}
+
+$(document).ready(ready)
+$(document).on('page:load', ready)

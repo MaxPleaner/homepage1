@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'informant-rails'
+gem 'colored'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,5 +40,5 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+ gem 'byebug', group: [:development, :test]
 
