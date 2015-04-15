@@ -1,7 +1,7 @@
 
 Rails.application.routes.draw do
   root 'pages#index'
-  get 'pages/:name', to: 'pages#show'
+  get 'static_pages/:name', to: 'pages#show'
   resources :pages, except: [:edit, :update, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
