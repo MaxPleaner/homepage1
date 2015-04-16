@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
- 	@page = Page::StaticPage.find_by_name(params[:name])
+ 	  @page = Page::StaticPage.find_by_name(params[:name])
   end
 
   # GET /pages/new
@@ -23,10 +23,15 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
-    @page = Page.new(page_params)
-
+    params = page_params
+    password = params.delete(:password)
+    @page = Page.new(params)
+    unless password == "preventhax"
+      @page.name = "INCORRECT PASSWORD"
+      (render :new; return) 
+    end
     respond_to do |format|
-      if @page.save
+      if @page.persist_!
         format.html { redirect_to "#{root_url}static_pages/#{@page.name}", notice: 'Page was successfully created.' }
         format.json { render :show, status: :created, location: @page }
       else
@@ -68,6 +73,6 @@ class PagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
-      params.require(:page).permit(:name, :content)
+      params.require(:page).permit(:name, :content, :password)
     end
 end

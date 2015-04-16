@@ -1,0 +1,92 @@
+This site is built with Rails. Posts are saved as static files but accessed through Active Record. It is deployed on heroku for free.
+
+There is a (non-publicly accessible) page on this site to create a new post. It is essentially a WYSIWYG editor because it allows writing HTML code which is drawn by the browser when the post is later viewed.
+
+I can play with CSS, too, like below:
+
+<style> 
+.animated { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes pulse { 
+    0% { -webkit-transform: scale(2); } 
+    50% { -webkit-transform: scale(1.1); } 
+    100% { -webkit-transform: scale(2); } 
+} 
+@keyframes pulse { 
+    0% { transform: scale(2); } 
+    50% { transform: scale(1.1); } 
+    100% { transform: scale(2); } 
+} 
+.pulse { 
+    -webkit-animation-name: pulse; 
+    animation-name: pulse; 
+}
+.pulseball {
+ background: black;
+ width: 40px;
+  box-shadow: 0px 0px 50px red;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+</style>
+
+<div class="pulseball animated pulse"></div>
+
+<br><br><br><br>
+
+That was done by a CSS animations generator, by the way ... I'm still learning how to make them.
+This is the code: <br> <xmp>
+<style> 
+.animated { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes pulse { 
+    0% { -webkit-transform: scale(2); } 
+    50% { -webkit-transform: scale(1.1); } 
+    100% { -webkit-transform: scale(2); } 
+} 
+@keyframes pulse { 
+    0% { transform: scale(2); } 
+    50% { transform: scale(1.1); } 
+    100% { transform: scale(2); } 
+} 
+.pulse { 
+    -webkit-animation-name: pulse; 
+    animation-name: pulse; 
+}
+.pulseball {
+ background: black;
+ width: 40px;
+  box-shadow: 0px 0px 50px red;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+</style>
+
+<div class="pulseball animated pulse"></div>
+
+</xmp>
+
+(I'm also using the deprecated "xmp" tag to print that code without escaping the characters)
+until I find a better way.

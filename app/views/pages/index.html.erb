@@ -15,3 +15,7 @@
     <% end %>
   </tbody>
 </table>
+
+<% if Rails.env.development? %>
+<a href="<%= new_page_url %>">New Page</a>
+<% end %>
