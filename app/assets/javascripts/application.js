@@ -16,9 +16,18 @@
 //= require ansi_up
 //= require_tree .
 
-function ready() {
+function ansiUpInit() {
 	body = $('body')[0]
-	body.outerHTML = ansi_up.ansi_to_html(body.outerHTML);
+	body.outerHTML = ansi_up.ansi_to_html(body.outerHTML);  
+}
+
+function styleLinks() {
+  $('a').addClass('em-text1')
+}
+
+function ready() {
+  ansiUpInit()
+  styleLinks()
 }
 
 $(document).ready(ready)
