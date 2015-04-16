@@ -13,3 +13,5 @@
  *= require_tree .
  *= require_self
  */
+
+pre {padding: 20px; font-size: 1.15em; font-family: monospace}

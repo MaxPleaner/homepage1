@@ -1,0 +1,34 @@
+<b>A list of some web technologies I have experience in:</b>
+
+<a href="http://rubyonrails.org/">Rails</a>
+<a href="http://www.sinatrarb.com/">Sinatra</a>
+<a href="https://jquery.com/">jQuery</a>
+<a href="http://backbonejs.org/">Backbone</a>
+<a href="https://www.meteor.com/">Meteor</a>
+<a href="http://git-scm.com/">Git</a>
+<a href="http://redis.io/">Redis</a>
+<a href="http://aws.amazon.com/">AWS</a>
+
+
+<b>Sites I've worked on:</b>
+
+<a href="http://app.sobrr.life/presentation/around_feeds">Sobrr.life website</a>
+	Wrote the infinite scroll / grid layout and (invisible) admin panel.
+	I was also a core back-end developer (Rails API for mobile apps) and did some DBA / Dev Ops as well.
+
+<a href="http://newsblender.info">News Blender</a>
+	(an RSS feed reader with Rails and Backbone)
+
+<a href="http://maxpleaner.github.io/snake">Snake</a>
+	(HTML5 Canvas game)
+
+<a href="http://maxpleaner.github.io/asteroids">Asteroids</a>
+	(HTML5 Canvas game)
+
+
+<b> Social media / contact links </b>
+
+<a href="https://github.com/maxpleaner">Github</a>
+<a href="https://linkedin.com/in/maxpleaner">LinkedIn</a>
+
+<a href="mailto:maxpleaner@gmail.com">Email</a>(<a href="mailto:maxpleaner@gmail.com">maxpleaner@gmail.com</a>)

@@ -1,13 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @page.name %>
+  <b><%= @page.name %></b>
 </p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @page.content %>
+  <pre><%= @page.content.html_safe %></pre>
 </p>
 
 <%= link_to 'Back', pages_path %>

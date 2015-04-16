@@ -5,7 +5,8 @@ class StaticPage
 	def self.find_by_name(name)
 		begin
 			if Page.find_by(name: name)
-				Page.new(name: "current path", content: File.read("app/views/static_pages/#{name}"))
+				file_name = name.split(" ").map(&:downcase).join("_")
+				Page.new(name: name, content: File.read("app/views/static_pages/#{file_name}"))
 			else
 				page_not_found(name, "Not in the DB")
 			end	
